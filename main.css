@@ -1,0 +1,39 @@
+/* Shared */
+body {
+    background-color: gray;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 1.5em 0 1.5em;
+}
+/* Header */
+header {
+    background-color: white;
+    height: 2em;
+}
+.topNav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.title {
+    height: 100vh;
+    text-align: center;
+}
+.title h1 {
+    font-size: 8em;
+}
+/* About */
+
+/* Projects */
+
+/* Contact */
+
+/* Footer */
+footer {
+    background-color: white;
+    height: 2.5em;
+    width: 100vw;
+    padding: 0;
+}
