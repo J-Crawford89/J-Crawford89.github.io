@@ -1,6 +1,13 @@
 /* Shared */
 body {
     background-color: gray;
+    overflow-x: hidden;
+}
+.section {
+    background-color: purple;
+    margin: 0;
+    padding: 0.5em;
+    border: 2px solid black;
 }
 nav li {
     list-style: none;
@@ -9,23 +16,38 @@ nav li {
 }
 /* Header */
 header {
-    background-color: white;
+    background-color: #4485C3;
     height: 2em;
 }
 .topNav {
     position: absolute;
+    padding-top: .17em;
     top: 0;
     right: 0;
+}
+.topNav a {
+    color: white;
+    font-weight: 600;
+}
+.topNav a:hover {
+    text-decoration: none;
+    color: black;
 }
 .title {
     height: 100vh;
     text-align: center;
+    border-bottom: 2px solid black;
+    background: url(./Assets/Skyline1.jpg);
+    background-position: left 15%;
 }
 .title h1 {
-    font-size: 8em;
+    margin-top: 20vh;
+    font-size: 9vw;
 }
 /* About */
-
+.aboutMe {
+    margin-left: -1em;
+}
 /* Projects */
 
 /* Contact */
