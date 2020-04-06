@@ -10,9 +10,14 @@ body {
     border: 2px solid black;
 }
 nav li {
-    list-style: none;
     display: inline-block;
     padding: 0 1.5em 0 1.5em;
+}
+li {
+    list-style: none;
+}
+h3 {
+    font-size: 3em;
 }
 /* Header */
 header {
@@ -47,6 +52,12 @@ header {
 /* About */
 .aboutMe {
     margin-left: -1em;
+}
+.picture img {
+    max-width: 100%;
+}
+.skills {
+    text-align: right;
 }
 /* Projects */
 
