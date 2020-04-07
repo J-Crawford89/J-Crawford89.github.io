@@ -11,14 +11,14 @@
 <body>
     <div class="wrapper">
         <!-- Header -->
-        <div class="title">
+        <div id="home" class="title">
             <header>
                 <nav class="topNav">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">PROJECTS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </header>
@@ -26,75 +26,91 @@
             <h3>.NET Developer</h3>
         </div>
         <!-- About -->
-        <div class="section row">
-            <div class="aboutMe col-12 col-md-6">
+        <div id="about" class="section row">
+            <div class="aboutMe col-12 col-lg-6">
                 <h3>About Me</h3>
                 <p>I lived most of my life 20 miles outside Chicago. As a teenager I found my love of computers and problem solving, 
                     teaching myself how to use a command terminal for no reason other than curiosity. After roughly 20 years living 
                     in the same area, I packed my bags and traveled around, living in Texas, Seattle, and even Africa before finding 
                     my new home in Indianapolis.</p>
-                    <p>Recently, I have refound that joy I had as a teenager, by marrying together my love for creativity and problem 
+                    <p>Recently, I have re-found that joy I had as a teenager, by marrying together my love for creativity and problem 
                         solving by diving head first into the world of development. I am currently nearly half-way through the .NET 
                         development course at ElevenFifty Academy and can not wait to put my new skills to use.
                     </p>
             </div>
-            <div class="col-12 col-sm-4 col-md-3 picture">
+            <div class="col-12 col-md-6 col-lg-3 col-xl-4 picture">
                 <img src="./Assets/Jon.jpg" alt="My Picture">
             </div>
-            <div class="skills col-12 col-sm-2 col-md-3">
+            <div class="skills col-12 col-md-6 col-lg-3 col-xl-2">
                 <h3>Skills</h3>
                 <ul class="skillsList">
-                    <li>HTML/CSS  <i class="fab fa-html5"></i></li>
-                    <li>Bootstrap  <i class="fab fa-bootstrap"></i></li>
-                    <li>C#  <i class="fas fa-code"></i></li>
-                    <li>Aglie  <i class="fas fa-sticky-note"></i></li>
-                    <li>Git  <i class="fab fa-github"></i></li>
-                    <li>More  <i class="fas fa-chart-bar"></i></li>
+                    <li>HTML/CSS <i class="fab fa-html5"></i></li>
+                    <li>Bootstrap <i class="fab fa-bootstrap"></i></li>
+                    <li>C# <i class="fas fa-code"></i></li>
+                    <li>Aglie <i class="fas fa-sticky-note"></i></li>
+                    <li>Git <i class="fab fa-github"></i></li>
+                    <li>More <i class="fas fa-chart-bar"></i></li>
                 </ul>
             </div>
         </div>
         <!-- Projects -->
-        <div class="section">
-            <h3>Projects</h3>
-            <div class="project">
-                <h5>CSS Creature</h5>
-                <a href="#"><img src="" alt="CSS Creature"></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div id="projects" class="section">
+            <div class="projectBar">
+                <h3>Projects</h3>
             </div>
-            <div class="project">
-                <h5>Static Storefront Page</h5>
-                <a href="#"><img src="" alt="Static Storefront"></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="project">
-                <h5>C# Projects</h5>
-                <a href="#"><img src="" alt="C# Projects"></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="projects row justify-content-md-center">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="project">
+                            <h5>CSS Creature</h5>
+                            <a href="https://codepen.io/jon-crawford/pen/jOPMjyK"><img src="./Assets/CSSCreature.jpg" alt="CSS Creature"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="project">
+                            <h5>Storefront Page</h5>
+                            <a href="https://github.com/J-Crawford89/StaticStoreFront.git"><img src="./Assets/StaticStoreFront.jpg" alt="Static Storefront"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="project">
+                            <h5>C# Projects</h5>
+                            <a href="https://github.com/J-Crawford89?tab=repositories&q=&type=&language=c%23"><img src="./Assets/Code.jpg" alt="C# Projects"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
             </div>
         </div>
         <!-- Contact -->
-        <div class="section">
+        <div id="contact" class="section row">
             <!-- modify this form HTML and place wherever you want your form -->
-            <form action="https://formspree.io/xnqbqyad" method="POST">
-                <label>
-                    Your email:
-                    <input type="text" name="_replyto">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
-            <div class="altContact">
-                <h3>Other Links</h3>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+            <div  class="col-12 col-md-8">
+                <form action="https://formspree.io/xnqbqyad" method="POST" class="contactForm">
+                    <h3>Contact Me</h3>
+                    <label>
+                        <input type="text" name="name" placeholder="Your Name">
+                    </label>
+                    <label>
+                        <input type="email" name="_replyto" placeholder="Your Email">
+                    </label>
+                    <label>
+                        <textarea name="message" placeholder = "Your Message"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="altContact">
+
+                    <h3>Other Links</h3>
+                    <ul>
+                        <li><a href="https://codepen.io/jon-crawford"><i class="fab fa-codepen"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jon-crawford-5a4aab7b/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/J-Crawford89"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- Footer -->
@@ -102,10 +118,10 @@
             <nav class="bottomNav">
                 <ul>
                     <li></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </footer>
