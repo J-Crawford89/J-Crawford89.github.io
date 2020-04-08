@@ -26,9 +26,12 @@
             <h3>.NET Developer</h3>
         </div>
         <!-- About -->
+        <div class="sectionBar">
+            <h2>ABOUT</h2>
+        </div>
         <div id="about" class="section row">
             <div class="aboutMe col-12 col-lg-6">
-                <h3>About Me</h3>
+                <h3>Bio</h3>
                 <p>I lived most of my life 20 miles outside Chicago. As a teenager I found my love of computers and problem solving, 
                     teaching myself how to use a command terminal for no reason other than curiosity. After roughly 20 years living 
                     in the same area, I packed my bags and traveled around, living in Texas, Seattle, and even Africa before finding 
@@ -54,40 +57,43 @@
             </div>
         </div>
         <!-- Projects -->
+        <div class="sectionBar">
+            <h2>PROJECTS</h2>
+        </div>
         <div id="projects" class="section">
-            <div class="projectBar">
-                <h3>Projects</h3>
-            </div>
                 <div class="projects row justify-content-md-center">
                     <div class="col-12 col-md-4 col-lg-3">
                         <div class="project">
                             <h5>CSS Creature</h5>
                             <a href="https://codepen.io/jon-crawford/pen/jOPMjyK"><img src="./Assets/CSSCreature.jpg" alt="CSS Creature"></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>A variation on the smiling imp emoji made with CSS!</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-lg-3">
                         <div class="project">
                             <h5>Storefront Page</h5>
                             <a href="https://github.com/J-Crawford89/StaticStoreFront.git"><img src="./Assets/StaticStoreFront.jpg" alt="Static Storefront"></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>A fictional static storefront page.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-lg-3">
                         <div class="project">
                             <h5>C# Projects</h5>
                             <a href="https://github.com/J-Crawford89?tab=repositories&q=&type=&language=c%23"><img src="./Assets/Code.jpg" alt="C# Projects"></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>A link to my C# Github Repos.</p>
                         </div>
                     </div>
             </div>
         </div>
         <!-- Contact -->
-        <div id="contact" class="section row">
+        <div class="sectionBar">
+            <h2>CONTACT</h2>
+        </div>
+        <div id="contact" class="section row justify-content-md-center">
             <!-- modify this form HTML and place wherever you want your form -->
             <div  class="col-12 col-md-8">
                 <form action="https://formspree.io/xnqbqyad" method="POST" class="contactForm">
-                    <h3>Contact Me</h3>
+                    <h3>Email</h3>
                     <label>
                         <input type="text" name="name" placeholder="Your Name">
                     </label>
@@ -97,27 +103,27 @@
                     <label>
                         <textarea name="message" placeholder = "Your Message"></textarea>
                     </label>
-                    <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
+                    <label class="submit">
+                        <button type="submit">Send</button>
+                    </label>
                 </form>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-3">
                 <div class="altContact">
-
                     <h3>Other Links</h3>
-                    <ul>
-                        <li><a href="https://codepen.io/jon-crawford"><i class="fab fa-codepen"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/jon-crawford-5a4aab7b/"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/J-Crawford89"><i class="fab fa-github"></i></a></li>
+                    <ul class="otherLinksList">
+                        <li>Codepen <a href="https://codepen.io/jon-crawford"><i class="fab fa-codepen"></i></a></li>
+                        <li>Linked In <a href="https://www.linkedin.com/in/jon-crawford-5a4aab7b/"><i class="fab fa-linkedin"></i></a></li>
+                        <li>Github <a href="https://github.com/J-Crawford89"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- Footer -->
         <footer>
-            <nav class="bottomNav">
+            <nav class="bottomNav row justify-content-center">
                 <ul>
-                    <li></li>
+                    <li>&copy 2020 Jonathon Crawford</li>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
