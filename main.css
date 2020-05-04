@@ -7,8 +7,11 @@
 6) dark gray: rgb(77, 77, 77)
 
 /* Shared */
-body {
+html {
+    scroll-behavior: smooth;
     overflow-x: hidden;
+}
+body {
     background: url(./Assets/Skyline1.jpg);
     background-position: left 15%;
     background-repeat: no-repeat;
@@ -19,6 +22,7 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     margin: 0;
     padding: 5em;
+    width: 100%;
 }
 nav li {
     display: inline-block;
@@ -48,21 +52,31 @@ p {
     text-align: center;
     color: rgb(18, 63, 122);
     background-color: #97c2eb;
-    width: 100vw;
+    width: 100%;
     padding: 2em 0 2.25em 0;
     border-top: 2px solid rgb(136, 136, 136);
     border-bottom: 2px solid rgb(136, 136, 136);
 }
 /* Header */
 header {
+    z-index: 10;
     background-color: #97c2eb;
     height: 2em;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    max-width: 100%;
 }
 .topNav {
+    margin: 0;
+    z-index: 11;
     position: absolute;
-    padding-top: .17em;
-    top: 0;
-    right: 0;
+    padding: .17em 0 0 0;
+}
+@media only screen and (min-width: 768px){
+    .topNav{
+        right: 0;
+    }
 }
 .topNav a {
     color: rgb(77, 77, 77);
@@ -73,7 +87,7 @@ header {
     color: rgb(18, 63, 122);
 }
 .title {
-    height: 100vh;
+    height: 80vh;
     text-align: center;
 }
 .title h1 {
@@ -260,7 +274,11 @@ footer {
     body {
         background-position: top;
     }
+    .sectionBar{
+        margin-top: 0.5em;
+    }
     .section {
+        margin-top: 0.5em;
         padding: 0;
     }
     nav li {
@@ -272,5 +290,17 @@ footer {
     }
     .project {
         padding: 2em;
+    }
+    .contactForm {
+        margin-top: 0.5em;
+    }
+    .altContact {
+        margin-top: 0.5em;
+    }
+    .picture{
+        margin: 1em 0 1em 0;
+    }
+    #contact{
+        padding-bottom: 1em;
     }
 } 
