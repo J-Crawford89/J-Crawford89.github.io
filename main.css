@@ -273,7 +273,7 @@ footer {
 {
     body {
         background-position-x: 18.7%;
-        background-position-y: 45%;
+        background-position-y: center;
         background-attachment: fixed;
     }
     .sectionBar{
