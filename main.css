@@ -220,6 +220,9 @@ header {
         margin-left: 0;
     }
 }
+.otherLinksWrapper{
+    padding-right:0;
+}
 .otherLinksList {
     padding: 1.5em 2em 0 0;
 }
