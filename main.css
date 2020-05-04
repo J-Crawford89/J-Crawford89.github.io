@@ -272,7 +272,9 @@ footer {
 @media only screen and (max-width: 768px)
 {
     body {
-        background-position: top;
+        background-position-x: 18.7%;
+        background-position-y: 45%;
+        background-attachment: fixed;
     }
     .sectionBar{
         margin-top: 0.5em;
