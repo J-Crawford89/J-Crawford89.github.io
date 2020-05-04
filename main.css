@@ -294,6 +294,9 @@ footer {
         height: 5em;
         padding: 1em 0 0 0;
     }
+    #about{
+        padding: 15px;
+    }
     .project {
         padding: 2em;
     }
@@ -305,6 +308,9 @@ footer {
     }
     .picture{
         margin: 1em 0 1em 0;
+    }
+    .otherLinksWrapper {
+        padding-right: 15px;
     }
     #contact{
         padding-bottom: 1em;
