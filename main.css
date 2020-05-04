@@ -215,6 +215,13 @@ header {
     background: white;
     height: 100%;
 }
+.altContact a {
+    color: rgb(77, 77, 77);
+}
+.altContact a:hover {
+    color: rgb(18, 63, 122);
+    text-decoration: none;
+}
 @media only screen and (max-width:1300px) {
     .altContact {
         margin-left: 0;
