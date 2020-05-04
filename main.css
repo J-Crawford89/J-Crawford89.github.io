@@ -273,8 +273,9 @@ footer {
 {
     body {
         background-position-x: 18.7%;
-        background-position-y: 0%;
+        background-position-y: -5%;
         background-attachment: fixed;
+        background-repeat: repeat-y;
     }
     .sectionBar{
         margin-top: 0.5em;
