@@ -133,6 +133,12 @@ header {
     max-width: 100%;
     min-width: 100%;
 }
+.projects h5:hover{
+    color: rgb(18, 63, 122);
+}
+.projects a:hover {
+    text-decoration: none;
+}
 @media only screen and (min-width:1600px){
     .project {
         padding: 1.5em 3.5em 1.5em 3.5em;
