@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/f18c7dfe42.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Portfolio</title>
+    <meta name="description" content="Jon Crawford, .NET developer. Web and mobile applications, APIs, and personal projects.">
+    <title>Jon Crawford | .NET Developer</title>
 </head>
 <body>
     <div class="wrapper">
         <!-- Header -->
         <header>
-            <nav class="topNav">
+            <nav class="topNav" aria-label="Main navigation">
+                <a class="navName" href="#home">Jon Crawford</a>
                 <ul>
-                    <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
+                <a class="actionLink actionPrimary navResume" href="./Assets/Jon-Crawford-Resume.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
             </nav>
         </header>
         <div id="home" class="title">
@@ -30,107 +32,169 @@
             <h2>ABOUT</h2>
         </div>
         <div id="about" class="section row">
-            <div class="aboutMe col-12 col-lg-6">
+            <div class="col-12 col-md-4 picture">
+                <img src="./Assets/Jon.jpg" alt="Jon Crawford">
+            </div>
+            <div class="aboutMe col-12 col-md-8">
                 <h3>Bio</h3>
                 <p>I lived most of my life 20 miles outside Chicago. As a teenager I found my love of computers and problem solving, 
                     teaching myself how to use a command terminal for no reason other than curiosity. After roughly 20 years living 
                     in the same area, I packed my bags and traveled around, living in Texas, Seattle, and even Africa before finding 
                     my new home in Indianapolis.</p>
-                    <p>Recently, I have re-found that joy I had as a teenager, by marrying together my love for creativity and problem 
-                        solving by diving head first into the world of development. I am currently nearly half-way through the .NET 
-                        development course at ElevenFifty Academy and can not wait to put my new skills to use.
-                    </p>
+                <p>I graduated from Eleven Fifty Academy in 2020 and have spent the past six years working as a software developer. Most of my work has been in C# and .NET, building and maintaining websites, mobile apps, APIs, and the databases behind them.</p>
+                <p>I've worked with Blazor, MAUI, Xamarin, and ASP.NET MVC, integrated systems like Stripe and Shopify, maintained Azure DevOps pipelines, and released apps through the Apple, Android, and Amazon app stores. Outside of work, I've been building a wish-list app, a game, and tools for managing notes.</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 col-xl-4 picture">
-                <img src="./Assets/Jon.jpg" alt="My Picture">
-            </div>
-            <div class="skills col-12 col-md-6 col-lg-3 col-xl-2">
+            <div class="skills col-12">
                 <h3>Skills</h3>
                 <ul class="skillsList">
-                    <li>HTML/CSS <i class="fab fa-html5"></i></li>
-                    <li>Bootstrap <i class="fab fa-bootstrap"></i></li>
-                    <li>C# <i class="fas fa-code"></i></li>
-                    <li>Agile <i class="fas fa-sticky-note"></i></li>
-                    <li>Git <i class="fab fa-github"></i></li>
-                    <li>More <i class="fas fa-chart-bar"></i></li>
+                    <li>C# / .NET</li>
+                    <li>ASP.NET MVC / APIs</li>
+                    <li>Blazor</li>
+                    <li>MAUI / Xamarin</li>
+                    <li>SQL Server / SQLite</li>
+                    <li>HTML / CSS / JavaScript</li>
+                    <li>Bootstrap / MudBlazor</li>
+                    <li>Stripe / Shopify</li>
+                    <li>Git / Azure DevOps / CI/CD</li>
                 </ul>
             </div>
         </div>
-        <!-- Projects -->
-        <div class="sectionBar">
-            <h2>PROJECTS</h2>
+        <!-- Professional experience -->
+        <div class="sectionBar"><h2>EXPERIENCE</h2></div>
+        <div id="experience" class="section">
+            <ol class="employmentTimeline">
+                <li class="employmentEntry">
+                    <p class="employmentDates">Sep 2021 – Sep 2026</p>
+                    <div class="employmentDetails">
+                        <h3>C2IT Consulting</h3>
+                        <p class="employmentRole">Developer</p>
+                        <h4 class="professionalHeading">Professional projects at C2IT</h4>
+                        <div class="professionalProjects">
+
+                <article class="professionalProject">
+                    <h4>Daily Audio Bible</h4>
+                    <p>I worked on a .NET MAUI Blazor Hybrid mobile app, a Blazor website, and supporting APIs. The system streams audio from Azure Blob Storage and includes community features, SQL Server and SQLite databases, and Shopify and Stripe integrations.</p>
+                </article>
+                <article class="professionalProject">
+                    <h4>Northern Lights Locating</h4>
+                    <p>An iOS app for field locators built with Xamarin, paired with an ASP.NET MVC management site and shared API. The system uses SQLite for local storage and integrates iOS maps and location services, Hangfire, and Twilio.</p>
+                </article>
+                <article class="professionalProject">
+                    <h4>My Truck</h4>
+                    <p>An inventory management system for HVAC and related companies. I worked with Xamarin apps for iOS and Android, mobile and tablet layouts, an ASP.NET management portal, and a shared API backed by SQL Server.</p>
+                </article>
+                        </div>
+                    </div>
+                </li>
+                <li class="employmentEntry">
+                    <p class="employmentDates">Sep 2020 – Sep 2021</p>
+                    <div class="employmentDetails">
+                        <h3>Web Connectivity</h3>
+                        <p class="employmentRole">Junior Application Developer</p>
+                    </div>
+                </li>
+            </ol>
         </div>
+        <!-- Personal projects -->
+        <div class="sectionBar"><h2>PROJECTS</h2></div>
         <div id="projects" class="section">
-                <div class="projects row justify-content-md-center">
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <div class="project">
-                            <a href="https://codepen.io/jon-crawford/pen/jOPMjyK" target="_ "><h5>CSS Creature</h5></a>
-                            <a href="https://codepen.io/jon-crawford/pen/jOPMjyK" target="_ "><img src="./Assets/CSSCreature.jpg" alt="CSS Creature"></a>
-                            <p>A variation on the smiling imp emoji made with CSS!</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <div class="project">
-                            <a href="https://j-crawford89.github.io/StaticStoreFront/" target="_ "><h5>Storefront Page</h5></a>
-                            <a href="https://j-crawford89.github.io/StaticStoreFront/" target="_ "><img src="./Assets/StaticStoreFront.jpg" alt="Static Storefront"></a>
-                            <p>A fictional static storefront page.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <div class="project">
-                            <a href="https://github.com/J-Crawford89?tab=repositories&q=&type=&language=c%23" target="_ "><h5>C# Projects</h5></a>
-                            <a href="https://github.com/J-Crawford89?tab=repositories&q=&type=&language=c%23" target="_ "><img src="./Assets/Code.jpg" alt="C# Projects"></a>
-                            <p>A link to my C# Github Repos.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <div class="project">
-                            <a href="https://homebrewguild.azurewebsites.net/User" target="_ "><h5>The Homebrew Guild</h5></a>
-                            <a href="https://homebrewguild.azurewebsites.net/User" target="_ "><img src="./Assets/HomebrewGuild.png" alt="C# Projects"></a>
-                            <p>My fully custom made website using ASP.NET MVC</p>
-                        </div>
-                    </div>
+            <div class="projects">
+                <article class="project projectRow">
+                <div class="projectMedia">
+                    <a class="projectScreenshot" href="./Assets/ListHero.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size List Hero screenshot"><img src="./Assets/ListHero.jpg" alt="List Hero landing page with its superhero mascot and wish-list introduction" width="1265" height="712" loading="lazy"></a>
+                </div>
+                <div class="projectCopy">
+                    <h5>List Hero</h5>
+                    <p>A wish-list app I'm building with Blazor, an ASP.NET Core API, EF Core, SQL Server, and Entra External ID. People can share lists and mark items as purchased without showing those purchases to the list owner.</p>
+                    <p>The app is deployed and still in development.</p>
+                    <div class="projectActions"><a class="actionLink actionPrimary" href="https://listhero-yj3pk6oimchdi.azurewebsites.net/" target="_blank" rel="noopener noreferrer">Try List Hero</a>
+                        <a class="actionLink" href="https://github.com/J-Crawford89/ListHero" target="_blank" rel="noopener noreferrer">View source on GitHub</a></div>
+                </div>
+                </article>
+                <article class="project projectRow projectTextOnly">
+                <div class="projectCopy">
+                    <h5>The Dungeon</h5>
+                    <p>A game I'm building in Godot with C#. It started as a text-based C# console adventure with custom menus, file storage, and content loaded from text files.</p>
+                    <p>There's a barebones prototype on itch.io. It's still early in development.</p>
+                    <div class="projectActions"><a class="actionLink actionPrimary" href="https://flycaptain.itch.io/the-dungeon" target="_blank" rel="noopener noreferrer">Play the prototype on itch.io</a>
+                        <a class="actionLink" href="https://github.com/J-Crawford89/TheDungeon/tree/main_development" target="_blank" rel="noopener noreferrer">View source on GitHub</a></div>
+                </div>
+                </article>
+                <article class="project projectRow projectReverse">
+                <div class="projectMedia">
+                    <a class="projectScreenshot" href="./Assets/LoreBridge.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Lore Bridge screenshot"><img src="./Assets/LoreBridge.png" alt="Lore Bridge desktop dashboard showing vault statistics, article status, and recent activity" width="2566" height="1016" loading="lazy"></a>
+                </div>
+                <div class="projectCopy">
+                    <h5>Lore Bridge</h5>
+                    <p>A .NET MAUI Blazor desktop app and MCP host I'm working on to connect notes and data from different sources. It works with local storage, Obsidian vaults, external APIs, and ChatGPT, with a review process for new notes.</p>
+                    <p>Still in development.</p>
+                    <div class="projectActions"><a class="actionLink" href="https://github.com/J-Crawford89/LoreBridge" target="_blank" rel="noopener noreferrer">View source on GitHub</a></div>
+                </div>
+                </article>
+                <article class="project projectRow">
+                <div class="projectMedia">
+                    <img src="./Assets/HomebrewGuild.png" alt="Screenshot of The Homebrew Guild" loading="lazy">
+                </div>
+                <div class="projectCopy">
+                    <h5>The Homebrew Guild</h5>
+                    <p>My final project at Eleven Fifty Academy: a full ASP.NET MVC site with accounts, roles, notifications, and a SQL database. Users could create custom content and browse content shared by others.</p>
+                    <p>The old Azure site is offline, but the source is still available.</p>
+                    <div class="projectActions"><a class="actionLink" href="https://github.com/J-Crawford89/HomebrewGuild" target="_blank" rel="noopener noreferrer">View the Homebrew Guild source</a></div>
+                </div>
+                </article>
             </div>
         </div>
         <!-- Contact -->
         <div class="sectionBar">
             <h2>CONTACT</h2>
         </div>
-        <div id="contact" class="section row justify-content-md-center">
-            <!-- modify this form HTML and place wherever you want your form -->
-            <div  class="col-12 col-md-8">
+        <div id="contact" class="section">
+            <div class="contactContent">
+                <div class="contactMain">
+                <h3>Get in touch</h3>
                 <form action="https://formspree.io/xnqbqyad" method="POST" class="contactForm">
-                    <h3>Email</h3>
-                    <label>
-                        <input type="text" name="name" placeholder="Your Name">
+                    <div class="contactFields">
+                        <label>Your name
+                            <input type="text" name="name" autocomplete="name" required>
+                        </label>
+                        <label>Your email
+                            <input type="email" name="_replyto" autocomplete="email" required>
+                        </label>
+                    </div>
+                    <label>Message
+                        <textarea name="message" required></textarea>
                     </label>
-                    <label>
-                        <input type="email" name="_replyto" placeholder="Your Email">
-                    </label>
-                    <label>
-                        <textarea name="message" placeholder = "Your Message"></textarea>
-                    </label>
-                    <label class="submit">
-                        <button type="submit">Send</button>
-                    </label>
+                    <button type="submit">Send message</button>
                 </form>
-            </div>
-            <div class="col-12 col-md-3 otherLinksWrapper">
-                <div class="altContact">
-                    <h3>Other Links</h3>
-                    <ul class="otherLinksList">
-                        <li><a href="https://codepen.io/jon-crawford" target="_ ">Codepen </a><a href="https://codepen.io/jon-crawford" target="_ "><i class="fab fa-codepen"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/jon-crawford-5a4aab7b/" target="_ ">Linked In </a><a href="https://www.linkedin.com/in/jon-crawford-5a4aab7b/" target="_ "><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/J-Crawford89" target ="_ ">Github </a><a href="https://github.com/J-Crawford89" target ="_ "><i class="fab fa-github"></i></a></li>
-                    </ul>
                 </div>
+                <nav class="contactIcons" aria-label="Find me online and download my résumé">
+                    <a class="contactIcon" href="https://www.linkedin.com/in/jon-crawford-5a4aab7b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg>
+                        <span class="iconLabel" aria-hidden="true">LinkedIn</span>
+                    </a>
+                    <a class="contactIcon" href="https://github.com/J-Crawford89" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg>
+                        <span class="iconLabel" aria-hidden="true">GitHub</span>
+                    </a>
+                    <a class="contactIcon" href="./Assets/Jon-Crawford-Resume.pdf" download aria-label="Download résumé">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+  <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z"/>
+</svg>
+                        <span class="iconLabel" aria-hidden="true">Download résumé</span>
+                    </a>
+                </nav>
             </div>
         </div>
         <!-- Footer -->
         <footer>
             <nav class="bottomNav row justify-content-center">
                 <ul>
-                    <li>&copy 2020 Jonathon Crawford</li>
+                    <li>&copy; 2026 Jonathon Crawford</li>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
